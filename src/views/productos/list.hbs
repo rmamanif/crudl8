@@ -1,0 +1,36 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each links}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                        <h3 class="card-title text-uppercase">
+                            {{nombre}}
+                        </h3>
+                    <p class="m-2">{{description}}</p>
+                    <p class="mx-auto">{{tipo}}</p>
+                    <p class="mx-auto">{{cantidad}}</p>
+                    <p class="mx-auto">{{marca}}</p>
+
+                    <p class="text-muted">
+                        {{timeago created_at}}
+                    </p>
+                    <a class="btn btn-danger" href="/productos/delete/{{id}}">
+                        Borrar ítem
+                    </a>
+                    <a class="btn btn-secondary" href="/productos/edit/{{id}}">
+                        Edit
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>Todavía no tienes útiles en tu lista</p>
+                <a href="/productos/add">Crea uno!</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
