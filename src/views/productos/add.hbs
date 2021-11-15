@@ -4,7 +4,7 @@
 
             <div class="card">
                 <div class="card-body">
-                    <form action="/productos/add" method="POST">
+                    <form action="/productos/add" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
                             <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus>
                         </div>
@@ -20,6 +20,12 @@
                         <div class="form-group">
                             <textarea name="description" rows="2" class="form-control" placeholder="Descripcion"></textarea>
                         </div>
+                        <div class="form-group">
+                              <label for="upload-image-file"></label>
+                              <input type="file" class="form-control-file" name="imagen" id="imagen" placeholder="upload-image-file" aria-describedby="fileHelpId">
+                              <small id="fileHelpId" class="form-text text-muted">Please select the image to be uploaded...</small>
+                        </div>
+
                         <div class="form-group">
                             <button class="btn btn-success btn-block">
                                 Guardar

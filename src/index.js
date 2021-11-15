@@ -59,6 +59,7 @@ app.use('/productos', require('./routes/links'));
 // Public
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 // Starting
 app.listen(app.get('port'), () => {
   console.log('Server is in port', app.get('port'));

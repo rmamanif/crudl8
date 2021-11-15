@@ -2,10 +2,10 @@ module.exports = {
 
     database: {
         connectionLimit: 10,
-        host: 'sql10.freemysqlhosting.net',
-        user: 'sql10443180',
-        password: 'qJKV3VSqq5',
-        database: 'sql10443180'
+        host: 'dblab12.ctidc9tp4hkh.us-east-1.rds.amazonaws.com',
+        user: 'richard',
+        password: '12345678a',
+        database: 'crud'
     }
 
 };
